@@ -3,80 +3,114 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="styles/page-styles.css">
         <title>Barangays and Local Governance — Zamboanga del Sur</title>
     </head>
 
-    <body>
-        <header>
-            <img src="images/logo.png" alt="Logo">
-            <h1>Barangays and Local Governance</h1>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="major-municipalities.html">Major Municipalities</a>
-                <a href="cultural-heritage.html">Cultural Heritage</a>
-                <a href="#gallery">Gallery</a>
-            </nav>
-        </header>
+    <body class="bg-light">
 
-        <div class="container">
-
-            <div id="tourism-info">
-                <div class="info-images">
-                    <img src="images/barangays-governance/main-img.jpg" alt="Barangays and Local Governance">
-                    <img src="images/barangays-governance/main-img1.jpg" alt="Barangays and Local Governance">
-                    <img src="images/barangays-governance/main-img2.jpg" alt="Barangays and Local Governance">
-                </div>
-
-                <div class="tourism-details">
-                    <h2>Overview</h2>
-                    <p>The barangay is the smallest administrative unit in the Philippines, and Zamboanga del Sur has over 700 barangays spread across its municipalities and the city. Each barangay is a self-governing community responsible for delivering grassroots services.</p>
-                    <h2>Barangay Government</h2>
-                    <p>Each barangay is led by a Punong Barangay (barangay captain) elected by residents. The barangay council, known as the Sangguniang Barangay, consists of seven elected councilors who assist in legislative functions at the local level.</p>
-                    <h2>Youth Council</h2>
-                    <p>The Sangguniang Kabataan (SK) represents the youth sector in each barangay. The SK chairperson and council are elected by young residents and are responsible for programs addressing youth welfare, education, and livelihood.</p>
-                    <h2>Functions</h2>
-                    <p>Barangay governments maintain peace and order, mediate local disputes through the Lupong Tagapamayapa, deliver basic health and social services, and manage community development projects funded through their share of government allocations.</p>
-                    <h2>Provincial Coordination</h2>
-                    <p>Barangays coordinate with their parent municipalities and the provincial government for larger projects, disaster response, and infrastructure needs. The provincial government provides technical assistance and oversight.</p>
-                    <h2>Community Life</h2>
-                    <p>Barangays are the heart of social and cultural life in the province. Community gatherings, fiestas, and local events are organized at the barangay level, strengthening community bonds and preserving local traditions.</p>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-brand sticky-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                    <img src="images/logo.png" alt="Logo" height="36">
+                    <span class="fw-bold">Zamboanga del Sur</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#pageNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="pageNav">
+                    <ul class="navbar-nav ms-auto gap-1">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="major-municipalities.html">Municipalities</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cultural-heritage.html">Cultural Heritage</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    </ul>
                 </div>
             </div>
+        </nav>
 
-            <div class="key-facts">
-                <h3>Key Facts</h3>
-                <ul>
-                    <li><strong>Total Barangays:</strong> Over 700 barangays</li>
-                    <li><strong>Smallest Unit:</strong> Barangay (village level)</li>
-                    <li><strong>Governance Head:</strong> Barangay Captain (Punong Barangay)</li>
-                    <li><strong>Council Members:</strong> Sangguniang Barangay</li>
-                    <li><strong>Youth Representation:</strong> Sangguniang Kabataan (SK)</li>
-                </ul>
+        <!-- PAGE TITLE -->
+        <div class="bg-brand-light py-4 border-bottom">
+            <div class="container">
+                <h1 class="h3 fw-bold text-brand mb-0">Barangays and Local Governance</h1>
             </div>
-
-            <div id="gallery">
-                <h3>Gallery</h3>
-                <div class="deck deck-3">
-                    <div class="photo-card">
-                        <img src="images/barangays-governance/img1.jpg" alt="Photo 1">
-                    </div>
-                    <div class="photo-card">
-                        <img src="images/barangays-governance/img2.jpg" alt="Photo 2">
-                    </div>
-                    <div class="photo-card">
-                        <img src="images/barangays-governance/img3.jpg" alt="Photo 3">
-                    </div>
-                </div>
-            </div>
-
         </div>
 
-        <footer>
-            <div class="footer-content">
-                <img src="images/logo.png" alt="Logo">
-                <h3>Zamboanga del Sur</h3>
+        <main class="container py-5">
+
+            <!-- INFO -->
+            <div class="row g-5 mb-5">
+                <div class="col-lg-4">
+                    <div class="sticky-top" style="top: 80px;">
+                        <img src="images/barangays-governance/main-img.jpg"  alt="Barangays and Local Governance" class="img-fluid rounded mb-3 w-100" style="height:180px; object-fit:cover;">
+                        <img src="images/barangays-governance/main-img1.jpg" alt="Barangays and Local Governance" class="img-fluid rounded mb-3 w-100" style="height:180px; object-fit:cover;">
+                        <img src="images/barangays-governance/main-img2.jpg" alt="Barangays and Local Governance" class="img-fluid rounded w-100"       style="height:180px; object-fit:cover;">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <h2 style="font-size:1.15rem;color:#1a3a2a;">Overview</h2>
+                    <p class="text-secondary lh-lg">The barangay is the smallest administrative unit in the Philippines, and Zamboanga del Sur has over 700 barangays spread across its municipalities and the city. Each barangay is a self-governing community responsible for delivering grassroots services.</p>
+                    <h2 class="mt-4" style="font-size:1.15rem;color:#1a3a2a;">Barangay Government</h2>
+                    <p class="text-secondary lh-lg">Each barangay is led by a Punong Barangay (barangay captain) elected by residents. The barangay council consists of seven elected councilors who assist in legislative functions at the local level.</p>
+                    <h2 class="mt-4" style="font-size:1.15rem;color:#1a3a2a;">Youth Council</h2>
+                    <p class="text-secondary lh-lg">The Sangguniang Kabataan (SK) represents the youth sector in each barangay. The SK chairperson and council are elected by young residents and are responsible for programs addressing youth welfare, education, and livelihood.</p>
+                    <h2 class="mt-4" style="font-size:1.15rem;color:#1a3a2a;">Functions</h2>
+                    <p class="text-secondary lh-lg">Barangay governments maintain peace and order, mediate local disputes, deliver basic health and social services, and manage community development projects funded through their share of government allocations.</p>
+                    <h2 class="mt-4" style="font-size:1.15rem;color:#1a3a2a;">Provincial Coordination</h2>
+                    <p class="text-secondary lh-lg">Barangays coordinate with their parent municipalities and the provincial government for larger projects, disaster response, and infrastructure needs. The provincial government provides technical assistance and oversight.</p>
+                    <h2 class="mt-4" style="font-size:1.15rem;color:#1a3a2a;">Community Life</h2>
+                    <p class="text-secondary lh-lg">Barangays are the heart of social and cultural life in the province. Community gatherings, fiestas, and local events are organized at the barangay level, strengthening community bonds and preserving local traditions.</p>
+                </div>
+            </div>
+
+            <!-- KEY FACTS -->
+            <div class="card border-0 shadow-sm mb-5">
+                <div class="card-body p-4">
+                    <h3 class="section-heading mb-3">Key Facts</h3>
+                    <ul class="list-unstyled mb-0">
+                        <li class="border-start border-3 ps-3 mb-3 text-secondary" style="border-color:#1a3a2a!important;"><strong style="color:#1a3a2a;">Total Barangays:</strong> Over 700 barangays</li>
+                        <li class="border-start border-3 ps-3 mb-3 text-secondary" style="border-color:#1a3a2a!important;"><strong style="color:#1a3a2a;">Smallest Unit:</strong> Barangay (village level)</li>
+                        <li class="border-start border-3 ps-3 mb-3 text-secondary" style="border-color:#1a3a2a!important;"><strong style="color:#1a3a2a;">Governance Head:</strong> Barangay Captain (Punong Barangay)</li>
+                        <li class="border-start border-3 ps-3 mb-3 text-secondary" style="border-color:#1a3a2a!important;"><strong style="color:#1a3a2a;">Council Members:</strong> Sangguniang Barangay</li>
+                        <li class="border-start border-3 ps-3 mb-3 text-secondary" style="border-color:#1a3a2a!important;"><strong style="color:#1a3a2a;">Youth Representation:</strong> Sangguniang Kabataan (SK)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- GALLERY -->
+            <div id="gallery">
+                <h3 class="section-heading mb-4">Gallery</h3>
+                <div class="row row-cols-1 row-cols-md-3 g-3">
+                    <div class="col">
+                        <a class="gallery-photo" href="images/barangays-governance/img1.jpg" target="_blank">
+                            <img src="images/barangays-governance/img1.jpg" alt="Photo 1">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="gallery-photo" href="images/barangays-governance/img2.jpg" target="_blank">
+                            <img src="images/barangays-governance/img2.jpg" alt="Photo 2">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="gallery-photo" href="images/barangays-governance/img3.jpg" target="_blank">
+                            <img src="images/barangays-governance/img3.jpg" alt="Photo 3">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="bg-brand text-white py-4 mt-5">
+            <div class="container d-flex align-items-center justify-content-center gap-3">
+                <img src="images/logo.png" alt="Logo" height="30">
+                <span class="fw-light">Zamboanga del Sur</span>
             </div>
         </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

@@ -3,80 +3,114 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="styles/page-styles.css">
         <title>Economy and Livelihoods — Zamboanga del Sur</title>
     </head>
 
-    <body>
-        <header>
-            <img src="images/logo.png" alt="Logo">
-            <h1>Economy and Livelihoods</h1>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="mount-pinukis.html">Mount Pinukis</a>
-                <a href="agriculture-fishing.html">Agriculture and Fishing</a>
-                <a href="#gallery">Gallery</a>
-            </nav>
-        </header>
+    <body class="bg-light">
 
-        <div class="container">
-
-            <div id="tourism-info">
-                <div class="info-images">
-                    <img src="images/economy-livelihoods/main-img.jpg" alt="Economy and Livelihoods">
-                    <img src="images/economy-livelihoods/main-img1.jpg" alt="Economy and Livelihoods">
-                    <img src="images/economy-livelihoods/main-img2.jpg" alt="Economy and Livelihoods">
-                </div>
-
-                <div class="tourism-details">
-                    <h2>Overview</h2>
-                    <p>The economy of Zamboanga del Sur is largely driven by agriculture, fishing, and small to medium-scale trade. The province is predominantly rural, with a majority of the population engaged in farming and fishing for their livelihoods.</p>
-                    <h2>Agricultural Economy</h2>
-                    <p>Agriculture is the backbone of the provincial economy. The major crops include coconut (for copra), rice, corn, banana, and various vegetables. Copra production is especially significant, with the province being a notable coconut-producing area in Mindanao.</p>
-                    <h2>Fishing and Aquaculture</h2>
-                    <p>Coastal communities rely heavily on fishing in the waters of Illana Bay and the Moro Gulf. Both commercial and subsistence fishing are practiced. Aquaculture, particularly seaweed farming and fish pond culture, has grown as an important livelihood in coastal municipalities.</p>
-                    <h2>Trade and Commerce</h2>
-                    <p>Pagadian City is the commercial heart of the province, hosting markets, malls, banks, and trading posts. The city serves as a distribution hub for agricultural products and consumer goods. Weekly markets in municipalities facilitate local trade and exchange.</p>
-                    <h2>Government and Services Sector</h2>
-                    <p>Government employment, education, health services, and public utilities represent a significant portion of the formal workforce. The expansion of service-sector jobs in Pagadian City has provided employment opportunities for educated residents.</p>
-                    <h2>Economic Challenges</h2>
-                    <p>The province faces challenges including limited infrastructure in interior areas, vulnerability to natural disasters, and the need for economic diversification. Government programs target poverty reduction, agricultural modernization, and small enterprise development to improve the livelihoods of residents.</p>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-brand sticky-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                    <img src="images/logo.png" alt="Logo" height="36">
+                    <span class="fw-bold">Zamboanga del Sur</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#pageNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="pageNav">
+                    <ul class="navbar-nav ms-auto gap-1">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="mount-pinukis.html">Mount Pinukis</a></li>
+                        <li class="nav-item"><a class="nav-link" href="agriculture-fishing.html">Agriculture</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    </ul>
                 </div>
             </div>
+        </nav>
 
-            <div class="key-facts">
-                <h3>Key Facts</h3>
-                <ul>
-                    <li><strong>Main Industries:</strong> Agriculture, fishing, trade</li>
-                    <li><strong>Major Crop:</strong> Coconut (copra)</li>
-                    <li><strong>Commercial Center:</strong> Pagadian City</li>
-                    <li><strong>Employment:</strong> Mostly agriculture-based</li>
-                    <li><strong>Income Class:</strong> 4th to 5th class municipalities</li>
-                </ul>
+        <!-- PAGE TITLE -->
+        <div class="bg-brand-light py-4 border-bottom">
+            <div class="container">
+                <h1 class="h3 fw-bold text-brand mb-0">Economy and Livelihoods</h1>
             </div>
-
-            <div id="gallery">
-                <h3>Gallery</h3>
-                <div class="deck deck-3">
-                    <div class="photo-card">
-                        <img src="images/economy-livelihoods/img1.jpg" alt="Photo 1">
-                    </div>
-                    <div class="photo-card">
-                        <img src="images/economy-livelihoods/img2.jpg" alt="Photo 2">
-                    </div>
-                    <div class="photo-card">
-                        <img src="images/economy-livelihoods/img3.jpg" alt="Photo 3">
-                    </div>
-                </div>
-            </div>
-
         </div>
 
-        <footer>
-            <div class="footer-content">
-                <img src="images/logo.png" alt="Logo">
-                <h3>Zamboanga del Sur</h3>
+        <main class="container py-5">
+
+            <!-- INFO -->
+            <div class="row g-5 mb-5">
+                <div class="col-lg-4">
+                    <div class="sticky-top" style="top: 80px;">
+                        <img src="images/economy-livelihoods/main-img.jpg"  alt="Economy and Livelihoods" class="img-fluid rounded mb-3 w-100" style="height:180px; object-fit:cover;">
+                        <img src="images/economy-livelihoods/main-img1.jpg" alt="Economy and Livelihoods" class="img-fluid rounded mb-3 w-100" style="height:180px; object-fit:cover;">
+                        <img src="images/economy-livelihoods/main-img2.jpg" alt="Economy and Livelihoods" class="img-fluid rounded w-100"       style="height:180px; object-fit:cover;">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <h2 style="font-size:1.15rem;color:#1a3a2a;">Overview</h2>
+                    <p class="text-secondary lh-lg">The economy of Zamboanga del Sur is largely driven by agriculture, fishing, and small to medium-scale trade. The province is predominantly rural, with a majority of the population engaged in farming and fishing for their livelihoods.</p>
+                    <h2 class="mt-4" style="font-size:1.15rem;color:#1a3a2a;">Agricultural Economy</h2>
+                    <p class="text-secondary lh-lg">Agriculture is the backbone of the provincial economy. The major crops include coconut for copra, rice, corn, banana, and various vegetables. Copra production is especially significant, with the province being a notable coconut-producing area in Mindanao.</p>
+                    <h2 class="mt-4" style="font-size:1.15rem;color:#1a3a2a;">Fishing and Aquaculture</h2>
+                    <p class="text-secondary lh-lg">Coastal communities rely heavily on fishing in the waters of Illana Bay and the Moro Gulf. Both commercial and subsistence fishing are practiced. Aquaculture, particularly seaweed farming and fish pond culture, has grown as an important livelihood.</p>
+                    <h2 class="mt-4" style="font-size:1.15rem;color:#1a3a2a;">Trade and Commerce</h2>
+                    <p class="text-secondary lh-lg">Pagadian City is the commercial heart of the province, hosting markets, malls, banks, and trading posts. The city serves as a distribution hub for agricultural products and consumer goods. Weekly markets in municipalities facilitate local trade and exchange.</p>
+                    <h2 class="mt-4" style="font-size:1.15rem;color:#1a3a2a;">Government and Services</h2>
+                    <p class="text-secondary lh-lg">Government employment, education, health services, and public utilities represent a significant portion of the formal workforce. The expansion of service-sector jobs in Pagadian City has provided employment opportunities for educated residents.</p>
+                    <h2 class="mt-4" style="font-size:1.15rem;color:#1a3a2a;">Economic Challenges</h2>
+                    <p class="text-secondary lh-lg">The province faces challenges including limited infrastructure in interior areas, vulnerability to natural disasters, and the need for economic diversification. Government programs target poverty reduction, agricultural modernization, and small enterprise development.</p>
+                </div>
+            </div>
+
+            <!-- KEY FACTS -->
+            <div class="card border-0 shadow-sm mb-5">
+                <div class="card-body p-4">
+                    <h3 class="section-heading mb-3">Key Facts</h3>
+                    <ul class="list-unstyled mb-0">
+                        <li class="border-start border-3 ps-3 mb-3 text-secondary" style="border-color:#1a3a2a!important;"><strong style="color:#1a3a2a;">Main Industries:</strong> Agriculture, fishing, trade</li>
+                        <li class="border-start border-3 ps-3 mb-3 text-secondary" style="border-color:#1a3a2a!important;"><strong style="color:#1a3a2a;">Major Crop:</strong> Coconut (copra)</li>
+                        <li class="border-start border-3 ps-3 mb-3 text-secondary" style="border-color:#1a3a2a!important;"><strong style="color:#1a3a2a;">Commercial Center:</strong> Pagadian City</li>
+                        <li class="border-start border-3 ps-3 mb-3 text-secondary" style="border-color:#1a3a2a!important;"><strong style="color:#1a3a2a;">Employment:</strong> Mostly agriculture-based</li>
+                        <li class="border-start border-3 ps-3 mb-3 text-secondary" style="border-color:#1a3a2a!important;"><strong style="color:#1a3a2a;">Income Class:</strong> 4th to 5th class municipalities</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- GALLERY -->
+            <div id="gallery">
+                <h3 class="section-heading mb-4">Gallery</h3>
+                <div class="row row-cols-1 row-cols-md-3 g-3">
+                    <div class="col">
+                        <a class="gallery-photo" href="images/economy-livelihoods/img1.jpg" target="_blank">
+                            <img src="images/economy-livelihoods/img1.jpg" alt="Photo 1">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="gallery-photo" href="images/economy-livelihoods/img2.jpg" target="_blank">
+                            <img src="images/economy-livelihoods/img2.jpg" alt="Photo 2">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="gallery-photo" href="images/economy-livelihoods/img3.jpg" target="_blank">
+                            <img src="images/economy-livelihoods/img3.jpg" alt="Photo 3">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="bg-brand text-white py-4 mt-5">
+            <div class="container d-flex align-items-center justify-content-center gap-3">
+                <img src="images/logo.png" alt="Logo" height="30">
+                <span class="fw-light">Zamboanga del Sur</span>
             </div>
         </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

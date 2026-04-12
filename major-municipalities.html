@@ -3,80 +3,114 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="styles/page-styles.css">
         <title>Major Municipalities of Zamboanga del Sur — Zamboanga del Sur</title>
     </head>
 
-    <body>
-        <header>
-            <img src="images/logo.png" alt="Logo">
-            <h1>Major Municipalities of Zamboanga del Sur</h1>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="pagadian-city.html">Pagadian City</a>
-                <a href="barangays-governance.html">Barangays and Governance</a>
-                <a href="#gallery">Gallery</a>
-            </nav>
-        </header>
+    <body class="bg-light">
 
-        <div class="container">
-
-            <div id="tourism-info">
-                <div class="info-images">
-                    <img src="images/major-municipalities/main-img.jpg" alt="Major Municipalities of Zamboanga del Sur">
-                    <img src="images/major-municipalities/main-img1.jpg" alt="Major Municipalities of Zamboanga del Sur">
-                    <img src="images/major-municipalities/main-img2.jpg" alt="Major Municipalities of Zamboanga del Sur">
-                </div>
-
-                <div class="tourism-details">
-                    <h2>Overview</h2>
-                    <p>Zamboanga del Sur is composed of 26 municipalities, each with its own distinct character, resources, and communities. Together with Pagadian City, they form the administrative and geographic fabric of the province.</p>
-                    <h2>Labangan</h2>
-                    <p>One of the larger municipalities, Labangan is an agricultural hub known for rice and corn production. It is located along a major road corridor and serves as a transit point for goods moving across the province.</p>
-                    <h2>Molave</h2>
-                    <p>Molave is a bustling municipality and a significant commercial center in the interior of the province. It is known for its markets and is a key stop along the highway connecting Pagadian to the rest of Mindanao.</p>
-                    <h2>Tambulig</h2>
-                    <p>Located in the interior highlands, Tambulig is known for its scenic landscapes and is near the foothills of the Zamboanga mountain range. The municipality has a strong agricultural base and indigenous communities.</p>
-                    <h2>Coastal Municipalities</h2>
-                    <p>Municipalities such as Tukuran, Dinas, and Dumalinao line the coast of Illana Bay, supporting active fishing industries and coastal tourism. These areas are known for their seafood and scenic waterfront communities.</p>
-                    <h2>Local Governance</h2>
-                    <p>Each municipality is governed by a mayor, vice mayor, and council. Local government units are responsible for delivering basic services, maintaining infrastructure, and managing local resources in coordination with provincial authorities.</p>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-brand sticky-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                    <img src="images/logo.png" alt="Logo" height="36">
+                    <span class="fw-bold">Zamboanga del Sur</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#pageNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="pageNav">
+                    <ul class="navbar-nav ms-auto gap-1">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pagadian-city.html">Pagadian City</a></li>
+                        <li class="nav-item"><a class="nav-link" href="barangays-governance.html">Barangays</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    </ul>
                 </div>
             </div>
+        </nav>
 
-            <div class="key-facts">
-                <h3>Key Facts</h3>
-                <ul>
-                    <li><strong>Total Municipalities:</strong> 26 municipalities</li>
-                    <li><strong>Largest Municipality:</strong> Labangan</li>
-                    <li><strong>Coastal Municipalities:</strong> Several along Illana Bay</li>
-                    <li><strong>Interior Municipalities:</strong> Accessed via mountain roads</li>
-                    <li><strong>Most Populous:</strong> Pagadian City (city status)</li>
-                </ul>
+        <!-- PAGE TITLE -->
+        <div class="bg-brand-light py-4 border-bottom">
+            <div class="container">
+                <h1 class="h3 fw-bold text-brand mb-0">Major Municipalities of Zamboanga del Sur</h1>
             </div>
-
-            <div id="gallery">
-                <h3>Gallery</h3>
-                <div class="deck deck-3">
-                    <div class="photo-card">
-                        <img src="images/major-municipalities/img1.jpg" alt="Photo 1">
-                    </div>
-                    <div class="photo-card">
-                        <img src="images/major-municipalities/img2.jpg" alt="Photo 2">
-                    </div>
-                    <div class="photo-card">
-                        <img src="images/major-municipalities/img3.jpg" alt="Photo 3">
-                    </div>
-                </div>
-            </div>
-
         </div>
 
-        <footer>
-            <div class="footer-content">
-                <img src="images/logo.png" alt="Logo">
-                <h3>Zamboanga del Sur</h3>
+        <main class="container py-5">
+
+            <!-- INFO -->
+            <div class="row g-5 mb-5">
+                <div class="col-lg-4">
+                    <div class="sticky-top" style="top: 80px;">
+                        <img src="images/major-municipalities/main-img.jpg"  alt="Major Municipalities of Zamboanga del Sur" class="img-fluid rounded mb-3 w-100" style="height:180px; object-fit:cover;">
+                        <img src="images/major-municipalities/main-img1.jpg" alt="Major Municipalities of Zamboanga del Sur" class="img-fluid rounded mb-3 w-100" style="height:180px; object-fit:cover;">
+                        <img src="images/major-municipalities/main-img2.jpg" alt="Major Municipalities of Zamboanga del Sur" class="img-fluid rounded w-100"       style="height:180px; object-fit:cover;">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <h2 style="font-size:1.15rem;color:#1a3a2a;">Overview</h2>
+                    <p class="text-secondary lh-lg">Zamboanga del Sur is composed of 26 municipalities, each with its own distinct character, resources, and communities. Together with Pagadian City, they form the administrative and geographic fabric of the province.</p>
+                    <h2 class="mt-4" style="font-size:1.15rem;color:#1a3a2a;">Labangan</h2>
+                    <p class="text-secondary lh-lg">One of the larger municipalities, Labangan is an agricultural hub known for rice and corn production. It is located along a major road corridor and serves as a transit point for goods moving across the province.</p>
+                    <h2 class="mt-4" style="font-size:1.15rem;color:#1a3a2a;">Molave</h2>
+                    <p class="text-secondary lh-lg">Molave is a bustling municipality and a significant commercial center in the interior of the province. It is known for its markets and is a key stop along the highway connecting Pagadian to the rest of Mindanao.</p>
+                    <h2 class="mt-4" style="font-size:1.15rem;color:#1a3a2a;">Tambulig</h2>
+                    <p class="text-secondary lh-lg">Located in the interior highlands, Tambulig is known for its scenic landscapes and is near the foothills of the Zamboanga mountain range. The municipality has a strong agricultural base and indigenous communities.</p>
+                    <h2 class="mt-4" style="font-size:1.15rem;color:#1a3a2a;">Coastal Municipalities</h2>
+                    <p class="text-secondary lh-lg">Municipalities such as Tukuran, Dinas, and Dumalinao line the coast of Illana Bay, supporting active fishing industries and coastal tourism. These areas are known for their seafood and scenic waterfront communities.</p>
+                    <h2 class="mt-4" style="font-size:1.15rem;color:#1a3a2a;">Local Governance</h2>
+                    <p class="text-secondary lh-lg">Each municipality is governed by a mayor, vice mayor, and council. Local government units are responsible for delivering basic services, maintaining infrastructure, and managing local resources in coordination with provincial authorities.</p>
+                </div>
+            </div>
+
+            <!-- KEY FACTS -->
+            <div class="card border-0 shadow-sm mb-5">
+                <div class="card-body p-4">
+                    <h3 class="section-heading mb-3">Key Facts</h3>
+                    <ul class="list-unstyled mb-0">
+                        <li class="border-start border-3 ps-3 mb-3 text-secondary" style="border-color:#1a3a2a!important;"><strong style="color:#1a3a2a;">Total Municipalities:</strong> 26 municipalities</li>
+                        <li class="border-start border-3 ps-3 mb-3 text-secondary" style="border-color:#1a3a2a!important;"><strong style="color:#1a3a2a;">Largest Municipality:</strong> Labangan</li>
+                        <li class="border-start border-3 ps-3 mb-3 text-secondary" style="border-color:#1a3a2a!important;"><strong style="color:#1a3a2a;">Coastal Municipalities:</strong> Several along Illana Bay</li>
+                        <li class="border-start border-3 ps-3 mb-3 text-secondary" style="border-color:#1a3a2a!important;"><strong style="color:#1a3a2a;">Interior Municipalities:</strong> Accessed via mountain roads</li>
+                        <li class="border-start border-3 ps-3 mb-3 text-secondary" style="border-color:#1a3a2a!important;"><strong style="color:#1a3a2a;">Most Populous:</strong> Pagadian City (city status)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- GALLERY -->
+            <div id="gallery">
+                <h3 class="section-heading mb-4">Gallery</h3>
+                <div class="row row-cols-1 row-cols-md-3 g-3">
+                    <div class="col">
+                        <a class="gallery-photo" href="images/major-municipalities/img1.jpg" target="_blank">
+                            <img src="images/major-municipalities/img1.jpg" alt="Photo 1">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="gallery-photo" href="images/major-municipalities/img2.jpg" target="_blank">
+                            <img src="images/major-municipalities/img2.jpg" alt="Photo 2">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="gallery-photo" href="images/major-municipalities/img3.jpg" target="_blank">
+                            <img src="images/major-municipalities/img3.jpg" alt="Photo 3">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="bg-brand text-white py-4 mt-5">
+            <div class="container d-flex align-items-center justify-content-center gap-3">
+                <img src="images/logo.png" alt="Logo" height="30">
+                <span class="fw-light">Zamboanga del Sur</span>
             </div>
         </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

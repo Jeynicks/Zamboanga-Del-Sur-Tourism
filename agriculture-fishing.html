@@ -3,80 +3,114 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="styles/page-styles.css">
         <title>Agriculture and Fishing Industry — Zamboanga del Sur</title>
     </head>
 
-    <body>
-        <header>
-            <img src="images/logo.png" alt="Logo">
-            <h1>Agriculture and Fishing Industry</h1>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="economy-livelihoods.html">Economy</a>
-                <a href="transportation.html">Transportation</a>
-                <a href="#gallery">Gallery</a>
-            </nav>
-        </header>
+    <body class="bg-light">
 
-        <div class="container">
-
-            <div id="tourism-info">
-                <div class="info-images">
-                    <img src="images/agriculture-fishing/main-img.jpg" alt="Agriculture and Fishing Industry">
-                    <img src="images/agriculture-fishing/main-img1.jpg" alt="Agriculture and Fishing Industry">
-                    <img src="images/agriculture-fishing/main-img2.jpg" alt="Agriculture and Fishing Industry">
-                </div>
-
-                <div class="tourism-details">
-                    <h2>Overview</h2>
-                    <p>Agriculture and fishing are the twin pillars of the Zamboanga del Sur economy. These industries support the majority of the provincial population and contribute significantly to the local food supply and export earnings.</p>
-                    <h2>Coconut Industry</h2>
-                    <p>Coconut is the dominant agricultural crop, with large plantations spread across the lowland and coastal areas of the province. Copra — dried coconut meat used to produce coconut oil — is the primary product, and the province is a significant copra supplier to processing facilities in Mindanao.</p>
-                    <h2>Rice and Corn</h2>
-                    <p>Rice is cultivated in the irrigated lowland areas, particularly in the municipalities of Labangan, Kumalarang, and Tukuran. Corn is also widely grown and serves as both food and animal feed. Government irrigation projects have helped improve rice yields in key production areas.</p>
-                    <h2>Fishing</h2>
-                    <p>Fishing is a critical livelihood for coastal communities. Artisanal fishermen use traditional methods to catch reef fish, tuna, sardines, and squid in the rich waters of Illana Bay. Commercial fishing operations also work the deeper waters of the Moro Gulf.</p>
-                    <h2>Seaweed and Aquaculture</h2>
-                    <p>Seaweed farming has grown considerably in coastal municipalities, providing income for small-scale farmers. Fish ponds, crab fattening, and other aquaculture activities are also practiced. Government programs through BFAR (Bureau of Fisheries and Aquatic Resources) provide support and training.</p>
-                    <h2>Challenges and Support</h2>
-                    <p>Farmers and fisherfolk face challenges including low farm-gate prices, post-harvest losses, climate variability, and limited access to credit and markets. The Department of Agriculture and local government units implement support programs including seed distribution, fishing vessel assistance, and market linkages.</p>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-brand sticky-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                    <img src="images/logo.png" alt="Logo" height="36">
+                    <span class="fw-bold">Zamboanga del Sur</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#pageNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="pageNav">
+                    <ul class="navbar-nav ms-auto gap-1">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="economy-livelihoods.html">Economy</a></li>
+                        <li class="nav-item"><a class="nav-link" href="transportation.html">Transportation</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    </ul>
                 </div>
             </div>
+        </nav>
 
-            <div class="key-facts">
-                <h3>Key Facts</h3>
-                <ul>
-                    <li><strong>Top Crop:</strong> Coconut/Copra</li>
-                    <li><strong>Rice Production:</strong> Significant in lowland areas</li>
-                    <li><strong>Fishing Grounds:</strong> Illana Bay, Moro Gulf</li>
-                    <li><strong>Seaweed Farming:</strong> Growing aquaculture industry</li>
-                    <li><strong>Support Programs:</strong> DA and BFAR assistance programs</li>
-                </ul>
+        <!-- PAGE TITLE -->
+        <div class="bg-brand-light py-4 border-bottom">
+            <div class="container">
+                <h1 class="h3 fw-bold text-brand mb-0">Agriculture and Fishing Industry</h1>
             </div>
-
-            <div id="gallery">
-                <h3>Gallery</h3>
-                <div class="deck deck-3">
-                    <div class="photo-card">
-                        <img src="images/agriculture-fishing/img1.jpg" alt="Photo 1">
-                    </div>
-                    <div class="photo-card">
-                        <img src="images/agriculture-fishing/img2.jpg" alt="Photo 2">
-                    </div>
-                    <div class="photo-card">
-                        <img src="images/agriculture-fishing/img3.jpg" alt="Photo 3">
-                    </div>
-                </div>
-            </div>
-
         </div>
 
-        <footer>
-            <div class="footer-content">
-                <img src="images/logo.png" alt="Logo">
-                <h3>Zamboanga del Sur</h3>
+        <main class="container py-5">
+
+            <!-- INFO -->
+            <div class="row g-5 mb-5">
+                <div class="col-lg-4">
+                    <div class="sticky-top" style="top: 80px;">
+                        <img src="images/agriculture-fishing/main-img.jpg"  alt="Agriculture and Fishing Industry" class="img-fluid rounded mb-3 w-100" style="height:180px; object-fit:cover;">
+                        <img src="images/agriculture-fishing/main-img1.jpg" alt="Agriculture and Fishing Industry" class="img-fluid rounded mb-3 w-100" style="height:180px; object-fit:cover;">
+                        <img src="images/agriculture-fishing/main-img2.jpg" alt="Agriculture and Fishing Industry" class="img-fluid rounded w-100"       style="height:180px; object-fit:cover;">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <h2 style="font-size:1.15rem;color:#1a3a2a;">Overview</h2>
+                    <p class="text-secondary lh-lg">Agriculture and fishing are the twin pillars of the Zamboanga del Sur economy. These industries support the majority of the provincial population and contribute significantly to the local food supply and export earnings.</p>
+                    <h2 class="mt-4" style="font-size:1.15rem;color:#1a3a2a;">Coconut Industry</h2>
+                    <p class="text-secondary lh-lg">Coconut is the dominant agricultural crop, with large plantations spread across the lowland and coastal areas. Copra is the primary product, and the province is a significant copra supplier to processing facilities in Mindanao.</p>
+                    <h2 class="mt-4" style="font-size:1.15rem;color:#1a3a2a;">Rice and Corn</h2>
+                    <p class="text-secondary lh-lg">Rice is cultivated in the irrigated lowland areas, particularly in the municipalities of Labangan, Kumalarang, and Tukuran. Corn is also widely grown and serves as both food and animal feed.</p>
+                    <h2 class="mt-4" style="font-size:1.15rem;color:#1a3a2a;">Fishing</h2>
+                    <p class="text-secondary lh-lg">Fishing is a critical livelihood for coastal communities. Artisanal fishermen use traditional methods to catch reef fish, tuna, sardines, and squid in the rich waters of Illana Bay. Commercial fishing operations also work the deeper waters of the Moro Gulf.</p>
+                    <h2 class="mt-4" style="font-size:1.15rem;color:#1a3a2a;">Seaweed and Aquaculture</h2>
+                    <p class="text-secondary lh-lg">Seaweed farming has grown considerably in coastal municipalities, providing income for small-scale farmers. Fish ponds, crab fattening, and other aquaculture activities are also practiced.</p>
+                    <h2 class="mt-4" style="font-size:1.15rem;color:#1a3a2a;">Challenges and Support</h2>
+                    <p class="text-secondary lh-lg">Farmers and fisherfolk face challenges including low farm-gate prices, post-harvest losses, climate variability, and limited access to credit and markets. The Department of Agriculture and local government units implement support programs.</p>
+                </div>
+            </div>
+
+            <!-- KEY FACTS -->
+            <div class="card border-0 shadow-sm mb-5">
+                <div class="card-body p-4">
+                    <h3 class="section-heading mb-3">Key Facts</h3>
+                    <ul class="list-unstyled mb-0">
+                        <li class="border-start border-3 ps-3 mb-3 text-secondary" style="border-color:#1a3a2a!important;"><strong style="color:#1a3a2a;">Top Crop:</strong> Coconut/Copra</li>
+                        <li class="border-start border-3 ps-3 mb-3 text-secondary" style="border-color:#1a3a2a!important;"><strong style="color:#1a3a2a;">Rice Production:</strong> Significant in lowland areas</li>
+                        <li class="border-start border-3 ps-3 mb-3 text-secondary" style="border-color:#1a3a2a!important;"><strong style="color:#1a3a2a;">Fishing Grounds:</strong> Illana Bay, Moro Gulf</li>
+                        <li class="border-start border-3 ps-3 mb-3 text-secondary" style="border-color:#1a3a2a!important;"><strong style="color:#1a3a2a;">Seaweed Farming:</strong> Growing aquaculture industry</li>
+                        <li class="border-start border-3 ps-3 mb-3 text-secondary" style="border-color:#1a3a2a!important;"><strong style="color:#1a3a2a;">Support Programs:</strong> DA and BFAR assistance programs</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- GALLERY -->
+            <div id="gallery">
+                <h3 class="section-heading mb-4">Gallery</h3>
+                <div class="row row-cols-1 row-cols-md-3 g-3">
+                    <div class="col">
+                        <a class="gallery-photo" href="images/agriculture-fishing/img1.jpg" target="_blank">
+                            <img src="images/agriculture-fishing/img1.jpg" alt="Photo 1">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="gallery-photo" href="images/agriculture-fishing/img2.jpg" target="_blank">
+                            <img src="images/agriculture-fishing/img2.jpg" alt="Photo 2">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="gallery-photo" href="images/agriculture-fishing/img3.jpg" target="_blank">
+                            <img src="images/agriculture-fishing/img3.jpg" alt="Photo 3">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="bg-brand text-white py-4 mt-5">
+            <div class="container d-flex align-items-center justify-content-center gap-3">
+                <img src="images/logo.png" alt="Logo" height="30">
+                <span class="fw-light">Zamboanga del Sur</span>
             </div>
         </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

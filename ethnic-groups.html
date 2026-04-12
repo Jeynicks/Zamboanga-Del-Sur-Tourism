@@ -3,80 +3,114 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="styles/page-styles.css">
         <title>Ethnic Groups — Zamboanga del Sur</title>
     </head>
 
-    <body>
-        <header>
-            <img src="images/logo.png" alt="Logo">
-            <h1>Ethnic Groups</h1>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="cultural-heritage.html">Cultural Heritage</a>
-                <a href="languages.html">Languages Spoken</a>
-                <a href="#gallery">Gallery</a>
-            </nav>
-        </header>
+    <body class="bg-light">
 
-        <div class="container">
-
-            <div id="tourism-info">
-                <div class="info-images">
-                    <img src="images/ethnic-groups/main-img.jpg" alt="Ethnic Groups">
-                    <img src="images/ethnic-groups/main-img1.jpg" alt="Ethnic Groups">
-                    <img src="images/ethnic-groups/main-img2.jpg" alt="Ethnic Groups">
-                </div>
-
-                <div class="tourism-details">
-                    <h2>Overview</h2>
-                    <p>Zamboanga del Sur is home to a diverse mix of ethnic groups that have coexisted — sometimes in tension, often in harmony — over centuries. The three main communities are the indigenous Subanen, the Muslim Moro peoples, and Christian settler migrants.</p>
-                    <h2>The Subanen</h2>
-                    <p>The Subanen are the largest indigenous people (IP) group in Zamboanga del Sur. Their name means "river people," reflecting their historical settlement along river systems. They practice traditional agriculture, animist spiritual rituals, and maintain their own language and governance systems called timuay.</p>
-                    <h2>Moro Communities</h2>
-                    <p>Muslim communities in the province include the Yakan, Tausug, and Maranao peoples, among others. They have strong traditions in trade, seafaring, and Islamic scholarship. Their presence dates back centuries and has shaped the coastal culture of the province.</p>
-                    <h2>Christian Settlers</h2>
-                    <p>The majority of the lowland population consists of Christian settlers who migrated primarily from the Visayas — particularly Cebu, Bohol, and Leyte — during the 20th century. They brought with them Cebuano language, Catholic faith, and Visayan cultural practices.</p>
-                    <h2>Intercultural Relations</h2>
-                    <p>While ethnic and religious differences have at times been a source of tension, daily life in most communities is marked by peaceful coexistence and cultural exchange. Intermarriage, shared markets, and joint community events reflect the integration of diverse groups.</p>
-                    <h2>Government Support</h2>
-                    <p>The National Commission on Indigenous Peoples (NCIP) implements programs to protect the rights, lands, and cultural heritage of indigenous communities in the province. Ancestral domain claims and IP education programs are active in several municipalities.</p>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-brand sticky-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                    <img src="images/logo.png" alt="Logo" height="36">
+                    <span class="fw-bold">Zamboanga del Sur</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#pageNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="pageNav">
+                    <ul class="navbar-nav ms-auto gap-1">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cultural-heritage.html">Cultural Heritage</a></li>
+                        <li class="nav-item"><a class="nav-link" href="languages.html">Languages</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    </ul>
                 </div>
             </div>
+        </nav>
 
-            <div class="key-facts">
-                <h3>Key Facts</h3>
-                <ul>
-                    <li><strong>Indigenous Group:</strong> Subanen (largest IP group)</li>
-                    <li><strong>Muslim Group:</strong> Yakan, Tausug, Maranao</li>
-                    <li><strong>Settler Groups:</strong> Cebuano, Hiligaynon, Ilocano</li>
-                    <li><strong>IP Population:</strong> Significant upland communities</li>
-                    <li><strong>Cultural Recognition:</strong> NCIP programs for IP rights</li>
-                </ul>
+        <!-- PAGE TITLE -->
+        <div class="bg-brand-light py-4 border-bottom">
+            <div class="container">
+                <h1 class="h3 fw-bold text-brand mb-0">Ethnic Groups</h1>
             </div>
-
-            <div id="gallery">
-                <h3>Gallery</h3>
-                <div class="deck deck-3">
-                    <div class="photo-card">
-                        <img src="images/ethnic-groups/img1.jpg" alt="Photo 1">
-                    </div>
-                    <div class="photo-card">
-                        <img src="images/ethnic-groups/img2.jpg" alt="Photo 2">
-                    </div>
-                    <div class="photo-card">
-                        <img src="images/ethnic-groups/img3.jpg" alt="Photo 3">
-                    </div>
-                </div>
-            </div>
-
         </div>
 
-        <footer>
-            <div class="footer-content">
-                <img src="images/logo.png" alt="Logo">
-                <h3>Zamboanga del Sur</h3>
+        <main class="container py-5">
+
+            <!-- INFO -->
+            <div class="row g-5 mb-5">
+                <div class="col-lg-4">
+                    <div class="sticky-top" style="top: 80px;">
+                        <img src="images/ethnic-groups/main-img.jpg"  alt="Ethnic Groups" class="img-fluid rounded mb-3 w-100" style="height:180px; object-fit:cover;">
+                        <img src="images/ethnic-groups/main-img1.jpg" alt="Ethnic Groups" class="img-fluid rounded mb-3 w-100" style="height:180px; object-fit:cover;">
+                        <img src="images/ethnic-groups/main-img2.jpg" alt="Ethnic Groups" class="img-fluid rounded w-100"       style="height:180px; object-fit:cover;">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <h2 style="font-size:1.15rem;color:#1a3a2a;">Overview</h2>
+                    <p class="text-secondary lh-lg">Zamboanga del Sur is home to a diverse mix of ethnic groups that have coexisted over centuries. The three main communities are the indigenous Subanen, the Muslim Moro peoples, and Christian settler migrants.</p>
+                    <h2 class="mt-4" style="font-size:1.15rem;color:#1a3a2a;">The Subanen</h2>
+                    <p class="text-secondary lh-lg">The Subanen are the largest indigenous people group in Zamboanga del Sur. Their name means river people, reflecting their historical settlement along river systems. They practice traditional agriculture, animist spiritual rituals, and maintain their own language and governance systems called timuay.</p>
+                    <h2 class="mt-4" style="font-size:1.15rem;color:#1a3a2a;">Moro Communities</h2>
+                    <p class="text-secondary lh-lg">Muslim communities in the province include the Yakan, Tausug, and Maranao peoples, among others. They have strong traditions in trade, seafaring, and Islamic scholarship. Their presence dates back centuries and has shaped the coastal culture of the province.</p>
+                    <h2 class="mt-4" style="font-size:1.15rem;color:#1a3a2a;">Christian Settlers</h2>
+                    <p class="text-secondary lh-lg">The majority of the lowland population consists of Christian settlers who migrated primarily from the Visayas during the 20th century. They brought with them Cebuano language, Catholic faith, and Visayan cultural practices.</p>
+                    <h2 class="mt-4" style="font-size:1.15rem;color:#1a3a2a;">Intercultural Relations</h2>
+                    <p class="text-secondary lh-lg">While ethnic and religious differences have at times been a source of tension, daily life in most communities is marked by peaceful coexistence and cultural exchange. Intermarriage, shared markets, and joint community events reflect the integration of diverse groups.</p>
+                    <h2 class="mt-4" style="font-size:1.15rem;color:#1a3a2a;">Government Support</h2>
+                    <p class="text-secondary lh-lg">The National Commission on Indigenous Peoples (NCIP) implements programs to protect the rights, lands, and cultural heritage of indigenous communities in the province. Ancestral domain claims and IP education programs are active in several municipalities.</p>
+                </div>
+            </div>
+
+            <!-- KEY FACTS -->
+            <div class="card border-0 shadow-sm mb-5">
+                <div class="card-body p-4">
+                    <h3 class="section-heading mb-3">Key Facts</h3>
+                    <ul class="list-unstyled mb-0">
+                        <li class="border-start border-3 ps-3 mb-3 text-secondary" style="border-color:#1a3a2a!important;"><strong style="color:#1a3a2a;">Indigenous Group:</strong> Subanen (largest IP group)</li>
+                        <li class="border-start border-3 ps-3 mb-3 text-secondary" style="border-color:#1a3a2a!important;"><strong style="color:#1a3a2a;">Muslim Group:</strong> Yakan, Tausug, Maranao</li>
+                        <li class="border-start border-3 ps-3 mb-3 text-secondary" style="border-color:#1a3a2a!important;"><strong style="color:#1a3a2a;">Settler Groups:</strong> Cebuano, Hiligaynon, Ilocano</li>
+                        <li class="border-start border-3 ps-3 mb-3 text-secondary" style="border-color:#1a3a2a!important;"><strong style="color:#1a3a2a;">IP Population:</strong> Significant upland communities</li>
+                        <li class="border-start border-3 ps-3 mb-3 text-secondary" style="border-color:#1a3a2a!important;"><strong style="color:#1a3a2a;">Cultural Recognition:</strong> NCIP programs for IP rights</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- GALLERY -->
+            <div id="gallery">
+                <h3 class="section-heading mb-4">Gallery</h3>
+                <div class="row row-cols-1 row-cols-md-3 g-3">
+                    <div class="col">
+                        <a class="gallery-photo" href="images/ethnic-groups/img1.jpg" target="_blank">
+                            <img src="images/ethnic-groups/img1.jpg" alt="Photo 1">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="gallery-photo" href="images/ethnic-groups/img2.jpg" target="_blank">
+                            <img src="images/ethnic-groups/img2.jpg" alt="Photo 2">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="gallery-photo" href="images/ethnic-groups/img3.jpg" target="_blank">
+                            <img src="images/ethnic-groups/img3.jpg" alt="Photo 3">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="bg-brand text-white py-4 mt-5">
+            <div class="container d-flex align-items-center justify-content-center gap-3">
+                <img src="images/logo.png" alt="Logo" height="30">
+                <span class="fw-light">Zamboanga del Sur</span>
             </div>
         </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

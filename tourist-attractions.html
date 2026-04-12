@@ -3,80 +3,114 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="styles/page-styles.css">
         <title>Top Tourist Attractions Overview — Zamboanga del Sur</title>
     </head>
 
-    <body>
-        <header>
-            <img src="images/logo.png" alt="Logo">
-            <h1>Top Tourist Attractions Overview</h1>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="festivals-events.html">Festivals and Events</a>
-                <a href="pulacan-falls.html">Pulacan Falls</a>
-                <a href="#gallery">Gallery</a>
-            </nav>
-        </header>
+    <body class="bg-light">
 
-        <div class="container">
-
-            <div id="tourism-info">
-                <div class="info-images">
-                    <img src="images/tourist-attractions/main-img.jpg" alt="Top Tourist Attractions Overview">
-                    <img src="images/tourist-attractions/main-img1.jpg" alt="Top Tourist Attractions Overview">
-                    <img src="images/tourist-attractions/main-img2.jpg" alt="Top Tourist Attractions Overview">
-                </div>
-
-                <div class="tourism-details">
-                    <h2>Overview</h2>
-                    <p>Zamboanga del Sur offers a range of tourist attractions from pristine islands and waterfalls to cultural sites and mountain trails. The province's natural beauty combined with its cultural diversity makes it a compelling destination in Mindanao.</p>
-                    <h2>Natural Wonders</h2>
-                    <p>The province is blessed with natural attractions including Pulacan Falls in Midsalip, Dao Dao Islands off the coast of Pagadian, and the challenging Mount Pinukis for trekking enthusiasts. These sites offer visitors opportunities for swimming, hiking, and nature appreciation.</p>
-                    <h2>Beach and Island Tourism</h2>
-                    <p>The coastal and island destinations of the province are among its most visited. White sand beaches, clear waters, and rich coral reefs draw tourists seeking a relaxed beach experience away from more commercialized destinations.</p>
-                    <h2>Cultural and Heritage Tourism</h2>
-                    <p>The diverse culture of the province can be experienced through visits to indigenous communities, cultural centers, traditional markets, and participation in local festivals. These experiences offer an authentic glimpse into the lives of the Subanen, Moro, and settler communities.</p>
-                    <h2>Ecotourism</h2>
-                    <p>The mountains and forests of the province offer opportunities for bird watching, jungle trekking, and river activities. The Zamboanga Mountain Range and its surrounding forests harbor endemic wildlife and spectacular scenery.</p>
-                    <h2>Tourism Development</h2>
-                    <p>Local government units and the provincial tourism office are actively promoting sustainable tourism development through infrastructure improvements, community-based tourism programs, and marketing initiatives to raise the profile of the province as a destination.</p>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-brand sticky-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                    <img src="images/logo.png" alt="Logo" height="36">
+                    <span class="fw-bold">Zamboanga del Sur</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#pageNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="pageNav">
+                    <ul class="navbar-nav ms-auto gap-1">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="festivals-events.html">Festivals</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pulacan-falls.html">Pulacan Falls</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    </ul>
                 </div>
             </div>
+        </nav>
 
-            <div class="key-facts">
-                <h3>Key Facts</h3>
-                <ul>
-                    <li><strong>Top Attraction:</strong> Dao Dao Islands</li>
-                    <li><strong>Natural Attraction:</strong> Pulacan Falls, Mount Pinukis</li>
-                    <li><strong>City Attraction:</strong> Pagadian City waterfront</li>
-                    <li><strong>Best Time to Visit:</strong> March to May (dry season)</li>
-                    <li><strong>Tourism Office:</strong> Pagadian City Tourism Office</li>
-                </ul>
+        <!-- PAGE TITLE -->
+        <div class="bg-brand-light py-4 border-bottom">
+            <div class="container">
+                <h1 class="h3 fw-bold text-brand mb-0">Top Tourist Attractions Overview</h1>
             </div>
-
-            <div id="gallery">
-                <h3>Gallery</h3>
-                <div class="deck deck-3">
-                    <div class="photo-card">
-                        <img src="images/tourist-attractions/img1.jpg" alt="Photo 1">
-                    </div>
-                    <div class="photo-card">
-                        <img src="images/tourist-attractions/img2.jpg" alt="Photo 2">
-                    </div>
-                    <div class="photo-card">
-                        <img src="images/tourist-attractions/img3.jpg" alt="Photo 3">
-                    </div>
-                </div>
-            </div>
-
         </div>
 
-        <footer>
-            <div class="footer-content">
-                <img src="images/logo.png" alt="Logo">
-                <h3>Zamboanga del Sur</h3>
+        <main class="container py-5">
+
+            <!-- INFO -->
+            <div class="row g-5 mb-5">
+                <div class="col-lg-4">
+                    <div class="sticky-top" style="top: 80px;">
+                        <img src="images/tourist-attractions/main-img.jpg"  alt="Top Tourist Attractions Overview" class="img-fluid rounded mb-3 w-100" style="height:180px; object-fit:cover;">
+                        <img src="images/tourist-attractions/main-img1.jpg" alt="Top Tourist Attractions Overview" class="img-fluid rounded mb-3 w-100" style="height:180px; object-fit:cover;">
+                        <img src="images/tourist-attractions/main-img2.jpg" alt="Top Tourist Attractions Overview" class="img-fluid rounded w-100"       style="height:180px; object-fit:cover;">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <h2 style="font-size:1.15rem;color:#1a3a2a;">Overview</h2>
+                    <p class="text-secondary lh-lg">Zamboanga del Sur offers a range of tourist attractions from pristine islands and waterfalls to cultural sites and mountain trails. The province's natural beauty combined with its cultural diversity makes it a compelling destination in Mindanao.</p>
+                    <h2 class="mt-4" style="font-size:1.15rem;color:#1a3a2a;">Natural Wonders</h2>
+                    <p class="text-secondary lh-lg">The province is blessed with natural attractions including Pulacan Falls in Midsalip, Dao Dao Islands off the coast of Pagadian, and the challenging Mount Pinukis for trekking enthusiasts.</p>
+                    <h2 class="mt-4" style="font-size:1.15rem;color:#1a3a2a;">Beach and Island Tourism</h2>
+                    <p class="text-secondary lh-lg">The coastal and island destinations of the province are among its most visited. White sand beaches, clear waters, and rich coral reefs draw tourists seeking a relaxed beach experience away from more commercialized destinations.</p>
+                    <h2 class="mt-4" style="font-size:1.15rem;color:#1a3a2a;">Cultural and Heritage Tourism</h2>
+                    <p class="text-secondary lh-lg">The diverse culture of the province can be experienced through visits to indigenous communities, cultural centers, traditional markets, and participation in local festivals.</p>
+                    <h2 class="mt-4" style="font-size:1.15rem;color:#1a3a2a;">Ecotourism</h2>
+                    <p class="text-secondary lh-lg">The mountains and forests of the province offer opportunities for bird watching, jungle trekking, and river activities. The Zamboanga Mountain Range and its surrounding forests harbor endemic wildlife and spectacular scenery.</p>
+                    <h2 class="mt-4" style="font-size:1.15rem;color:#1a3a2a;">Tourism Development</h2>
+                    <p class="text-secondary lh-lg">Local government units and the provincial tourism office are actively promoting sustainable tourism development through infrastructure improvements and community-based tourism programs.</p>
+                </div>
+            </div>
+
+            <!-- KEY FACTS -->
+            <div class="card border-0 shadow-sm mb-5">
+                <div class="card-body p-4">
+                    <h3 class="section-heading mb-3">Key Facts</h3>
+                    <ul class="list-unstyled mb-0">
+                        <li class="border-start border-3 ps-3 mb-3 text-secondary" style="border-color:#1a3a2a!important;"><strong style="color:#1a3a2a;">Top Attraction:</strong> Dao Dao Islands</li>
+                        <li class="border-start border-3 ps-3 mb-3 text-secondary" style="border-color:#1a3a2a!important;"><strong style="color:#1a3a2a;">Natural Attraction:</strong> Pulacan Falls, Mount Pinukis</li>
+                        <li class="border-start border-3 ps-3 mb-3 text-secondary" style="border-color:#1a3a2a!important;"><strong style="color:#1a3a2a;">City Attraction:</strong> Pagadian City waterfront</li>
+                        <li class="border-start border-3 ps-3 mb-3 text-secondary" style="border-color:#1a3a2a!important;"><strong style="color:#1a3a2a;">Best Time to Visit:</strong> March to May (dry season)</li>
+                        <li class="border-start border-3 ps-3 mb-3 text-secondary" style="border-color:#1a3a2a!important;"><strong style="color:#1a3a2a;">Tourism Office:</strong> Pagadian City Tourism Office</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- GALLERY -->
+            <div id="gallery">
+                <h3 class="section-heading mb-4">Gallery</h3>
+                <div class="row row-cols-1 row-cols-md-3 g-3">
+                    <div class="col">
+                        <a class="gallery-photo" href="images/tourist-attractions/img1.jpg" target="_blank">
+                            <img src="images/tourist-attractions/img1.jpg" alt="Photo 1">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="gallery-photo" href="images/tourist-attractions/img2.jpg" target="_blank">
+                            <img src="images/tourist-attractions/img2.jpg" alt="Photo 2">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="gallery-photo" href="images/tourist-attractions/img3.jpg" target="_blank">
+                            <img src="images/tourist-attractions/img3.jpg" alt="Photo 3">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="bg-brand text-white py-4 mt-5">
+            <div class="container d-flex align-items-center justify-content-center gap-3">
+                <img src="images/logo.png" alt="Logo" height="30">
+                <span class="fw-light">Zamboanga del Sur</span>
             </div>
         </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

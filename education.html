@@ -3,80 +3,114 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="styles/page-styles.css">
         <title>Education System — Zamboanga del Sur</title>
     </head>
 
-    <body>
-        <header>
-            <img src="images/logo.png" alt="Logo">
-            <h1>Education System</h1>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="transportation.html">Transportation</a>
-                <a href="food-cuisine.html">Food and Cuisine</a>
-                <a href="#gallery">Gallery</a>
-            </nav>
-        </header>
+    <body class="bg-light">
 
-        <div class="container">
-
-            <div id="tourism-info">
-                <div class="info-images">
-                    <img src="images/education/main-img.jpg" alt="Education System">
-                    <img src="images/education/main-img1.jpg" alt="Education System">
-                    <img src="images/education/main-img2.jpg" alt="Education System">
-                </div>
-
-                <div class="tourism-details">
-                    <h2>Overview</h2>
-                    <p>Education in Zamboanga del Sur is delivered through a network of public and private schools at all levels, from early childhood to tertiary education. The Department of Education oversees basic education, while higher education institutions provide college and vocational programs.</p>
-                    <h2>Basic Education</h2>
-                    <p>The province has hundreds of public elementary and high schools distributed across all municipalities and the city. These schools are managed by the Department of Education's Division of Zamboanga del Sur. Enrolment is generally high, and access to education has improved through infrastructure programs and conditional cash transfer programs.</p>
-                    <h2>Western Mindanao State University</h2>
-                    <p>The Western Mindanao State University (WMSU) Pagadian Campus is the premier state university in the province. It offers undergraduate and graduate programs in education, business, engineering, arts and sciences, and other fields. The university is a major source of professional graduates for the region.</p>
-                    <h2>Private Higher Education</h2>
-                    <p>Several private colleges and universities operate in Pagadian City, offering programs in nursing, teacher education, information technology, criminology, and business administration. These institutions supplement the capacity of the state university and provide options for students with specific academic interests.</p>
-                    <h2>Technical-Vocational Education</h2>
-                    <p>TESDA (Technical Education and Skills Development Authority) accredited centers throughout the province offer skills training in areas such as automotive, welding, food processing, and other trades. These programs address the demand for skilled workers in local industries.</p>
-                    <h2>Challenges and Initiatives</h2>
-                    <p>Educational challenges include teacher shortages in remote areas, limited facilities in some rural schools, and the need to bridge the gap between school curricula and local economic needs. Government initiatives such as the K-12 program and Pantawid Pamilyang Pilipino Program (4Ps) have helped improve school attendance and completion rates.</p>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-brand sticky-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                    <img src="images/logo.png" alt="Logo" height="36">
+                    <span class="fw-bold">Zamboanga del Sur</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#pageNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="pageNav">
+                    <ul class="navbar-nav ms-auto gap-1">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="transportation.html">Transportation</a></li>
+                        <li class="nav-item"><a class="nav-link" href="food-cuisine.html">Food and Cuisine</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    </ul>
                 </div>
             </div>
+        </nav>
 
-            <div class="key-facts">
-                <h3>Key Facts</h3>
-                <ul>
-                    <li><strong>State University:</strong> Western Mindanao State University – Pagadian Campus</li>
-                    <li><strong>Other Colleges:</strong> Multiple private colleges in Pagadian</li>
-                    <li><strong>Basic Education:</strong> DepEd supervised schools province-wide</li>
-                    <li><strong>Literacy Rate:</strong> Relatively high for Mindanao</li>
-                    <li><strong>Technical Education:</strong> TESDA programs available</li>
-                </ul>
+        <!-- PAGE TITLE -->
+        <div class="bg-brand-light py-4 border-bottom">
+            <div class="container">
+                <h1 class="h3 fw-bold text-brand mb-0">Education System</h1>
             </div>
-
-            <div id="gallery">
-                <h3>Gallery</h3>
-                <div class="deck deck-3">
-                    <div class="photo-card">
-                        <img src="images/education/img1.jpg" alt="Photo 1">
-                    </div>
-                    <div class="photo-card">
-                        <img src="images/education/img2.jpg" alt="Photo 2">
-                    </div>
-                    <div class="photo-card">
-                        <img src="images/education/img3.jpg" alt="Photo 3">
-                    </div>
-                </div>
-            </div>
-
         </div>
 
-        <footer>
-            <div class="footer-content">
-                <img src="images/logo.png" alt="Logo">
-                <h3>Zamboanga del Sur</h3>
+        <main class="container py-5">
+
+            <!-- INFO -->
+            <div class="row g-5 mb-5">
+                <div class="col-lg-4">
+                    <div class="sticky-top" style="top: 80px;">
+                        <img src="images/education/main-img.jpg"  alt="Education System" class="img-fluid rounded mb-3 w-100" style="height:180px; object-fit:cover;">
+                        <img src="images/education/main-img1.jpg" alt="Education System" class="img-fluid rounded mb-3 w-100" style="height:180px; object-fit:cover;">
+                        <img src="images/education/main-img2.jpg" alt="Education System" class="img-fluid rounded w-100"       style="height:180px; object-fit:cover;">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <h2 style="font-size:1.15rem;color:#1a3a2a;">Overview</h2>
+                    <p class="text-secondary lh-lg">Education in Zamboanga del Sur is delivered through a network of public and private schools at all levels, from early childhood to tertiary education. The Department of Education oversees basic education, while higher education institutions provide college and vocational programs.</p>
+                    <h2 class="mt-4" style="font-size:1.15rem;color:#1a3a2a;">Basic Education</h2>
+                    <p class="text-secondary lh-lg">The province has hundreds of public elementary and high schools distributed across all municipalities and the city. These schools are managed by the Department of Education's Division of Zamboanga del Sur. Enrolment is generally high.</p>
+                    <h2 class="mt-4" style="font-size:1.15rem;color:#1a3a2a;">Western Mindanao State University</h2>
+                    <p class="text-secondary lh-lg">The Western Mindanao State University (WMSU) Pagadian Campus is the premier state university in the province. It offers undergraduate and graduate programs in education, business, engineering, arts and sciences, and other fields.</p>
+                    <h2 class="mt-4" style="font-size:1.15rem;color:#1a3a2a;">Private Higher Education</h2>
+                    <p class="text-secondary lh-lg">Several private colleges and universities operate in Pagadian City, offering programs in nursing, teacher education, information technology, criminology, and business administration.</p>
+                    <h2 class="mt-4" style="font-size:1.15rem;color:#1a3a2a;">Technical-Vocational Education</h2>
+                    <p class="text-secondary lh-lg">TESDA accredited centers throughout the province offer skills training in areas such as automotive, welding, food processing, and other trades. These programs address the demand for skilled workers in local industries.</p>
+                    <h2 class="mt-4" style="font-size:1.15rem;color:#1a3a2a;">Challenges and Initiatives</h2>
+                    <p class="text-secondary lh-lg">Educational challenges include teacher shortages in remote areas, limited facilities in some rural schools, and the need to bridge the gap between school curricula and local economic needs.</p>
+                </div>
+            </div>
+
+            <!-- KEY FACTS -->
+            <div class="card border-0 shadow-sm mb-5">
+                <div class="card-body p-4">
+                    <h3 class="section-heading mb-3">Key Facts</h3>
+                    <ul class="list-unstyled mb-0">
+                        <li class="border-start border-3 ps-3 mb-3 text-secondary" style="border-color:#1a3a2a!important;"><strong style="color:#1a3a2a;">State University:</strong> Western Mindanao State University – Pagadian Campus</li>
+                        <li class="border-start border-3 ps-3 mb-3 text-secondary" style="border-color:#1a3a2a!important;"><strong style="color:#1a3a2a;">Other Colleges:</strong> Multiple private colleges in Pagadian</li>
+                        <li class="border-start border-3 ps-3 mb-3 text-secondary" style="border-color:#1a3a2a!important;"><strong style="color:#1a3a2a;">Basic Education:</strong> DepEd supervised schools province-wide</li>
+                        <li class="border-start border-3 ps-3 mb-3 text-secondary" style="border-color:#1a3a2a!important;"><strong style="color:#1a3a2a;">Literacy Rate:</strong> Relatively high for Mindanao</li>
+                        <li class="border-start border-3 ps-3 mb-3 text-secondary" style="border-color:#1a3a2a!important;"><strong style="color:#1a3a2a;">Technical Education:</strong> TESDA programs available</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- GALLERY -->
+            <div id="gallery">
+                <h3 class="section-heading mb-4">Gallery</h3>
+                <div class="row row-cols-1 row-cols-md-3 g-3">
+                    <div class="col">
+                        <a class="gallery-photo" href="images/education/img1.jpg" target="_blank">
+                            <img src="images/education/img1.jpg" alt="Photo 1">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="gallery-photo" href="images/education/img2.jpg" target="_blank">
+                            <img src="images/education/img2.jpg" alt="Photo 2">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="gallery-photo" href="images/education/img3.jpg" target="_blank">
+                            <img src="images/education/img3.jpg" alt="Photo 3">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="bg-brand text-white py-4 mt-5">
+            <div class="container d-flex align-items-center justify-content-center gap-3">
+                <img src="images/logo.png" alt="Logo" height="30">
+                <span class="fw-light">Zamboanga del Sur</span>
             </div>
         </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
